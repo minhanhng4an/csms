@@ -1,0 +1,8 @@
+.env
+credentials.json
+menteeEmails.json
+
+*.log
+
+dist
+node_modules

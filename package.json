@@ -1,0 +1,34 @@
+{
+  "name": "csms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Anh Minh Nguyen",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/gapi": "^0.0.42",
+    "@types/node": "^18.7.18",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "dotenv": "^16.0.2",
+    "eslint": "^8.0.1",
+    "google-auth-library": "^8.5.1",
+    "googleapis": "105",
+    "http": "^0.0.1-security",
+    "open": "^8.4.0",
+    "yargs": "^17.5.1"
+  },
+  "scripts": {
+    "start": "tsc -p ./ && node dist/main.js",
+    "build": "tsc -p ./"
+  },
+  "bin": {
+    "csms": "./bin/csms.js"
+  }
+}
