@@ -38,29 +38,31 @@ MENTOR_GOOGLE_USER="Your Google user if you are using multiple Google accounts. 
 
 2. [Get Google Service Account key](https://cloud.google.com/iam/docs/creating-managing-service-account-keys). Rename file to `credentials.json` and put in `csms/`
 
-3. (Optional) Create `menteeEmails.json` in in `csms/` if you have students who use different email accounts to register for the course and in Google Calendar mentor session events. Format:
+3. Share your calendar to the Goolge service account
+
+4. (Optional) Create `menteeEmails.json` in in `csms/` if you have students who use different email accounts to register for the course and in Google Calendar mentor session events. Format:
 ```json
 {
     "email_in_db@domain.com": "email_in_gcal@domain.com"
 }
 ``` 
 
-4. Install dependenices
+5. Install dependenices
 ```
 npm install
 ```
 
-5. Build
+6. Build
 ```
 npm run build
 ```
 
-6. Install package as global
+7. Install package as global
 ```
 npm install -g .
 ```
 
-7. Run CLI
+8. Run CLI
 ```
 csms start
 ```
